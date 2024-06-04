@@ -278,7 +278,7 @@ if __name__ == "__main__":
     )
     
     data = response.json()
-    readwise_book_num=data['count']
+    # readwise_book_num=data['count']
     readwise_book = {book['title']:book['num_highlights'] for book in data['results']}
     
     
